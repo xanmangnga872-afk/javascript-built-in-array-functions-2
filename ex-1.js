@@ -374,3 +374,11 @@ const bills = [
 ];
 
 // Start coding here
+function totals (i,o) {
+  return i + o["total"]
+}
+let bill = bills.reduce(totals,0) 
+console.log('Total bill transaction is' + bill)
+
+
+// เขียนแบบรวบยอดในบรรทัดเดียว
